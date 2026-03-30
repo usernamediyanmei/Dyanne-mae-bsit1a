@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise #3 HTML Forms</title>
+    <style>
+        h2 {       
+        }
+        .form-container {
+            border: 1px solid #000;
+            padding: 15px;
+            width: fit-content;
+        }
+        table td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+      <div class="form-container">
+        <strong>Request for Proposal</strong>
+        <form>
+            <table>
+                <!-- Personal Info Section -->
+                <tr>
+                    <td>Your name:</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="userid"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+
+                <!-- Business Info Section -->
+                <tr>
+                    <td>Your Business:</td>
+                    <td><textarea rows="6" cols="30" placeholder="Briefly describe your business in this space"></textarea></td>
+                </tr>
+
+                <!-- Company Size Section -->
+                <tr>
+                    <td>Company size:</td>
+                    <td>
+                        <input type="radio" name="companySize" value="less10"> Less than 10<br>
+                        <input type="radio" name="companySize" value="10-50"> 10 to 50<br>
+                        <input type="radio" name="companySize" value="50-200"> 50 to 200<br>
+                        <input type="radio" name="companySize" value="over200"> Over 200
+                    </td>
+                </tr>
+
+                <!-- Service Section -->
+                <tr>
+                    <td>Service:</td>
+                    <td>
+                        <input type="checkbox" name="service" value="brand"> Brand Identity<br>
+                        <input type="checkbox" name="service" value="newSite"> New Website<br>
+                        <input type="checkbox" name="service" value="redesign"> Web Redesigner
+                    </td>
+                </tr>
+
+                <!-- Timeline Section -->
+                <tr>
+                    <td>Timeline:</td>
+                    <td>
+                        <select name="timeline">
+                            <option value="immediately">Immediately</option>
+                            <option value="1-2weeks">1-2 weeks</option>
+                            <option value="3-6weeks">3-6 weeks</option>
+                            <option value="7-12months">7 - 2 months</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Submit Button -->
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Send to devdesign"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    
+</body>
+</html>

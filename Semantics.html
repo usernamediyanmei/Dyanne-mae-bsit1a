@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+
+    <style>
+
+         *{
+             box-sizing: border-box;
+          }
+        body{margin:0;}
+
+        header, footer{
+        background-color:rgb(56, 127, 198);
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:rgb(232, 233, 234);
+        }
+    nav ul{
+        list-style-type: none;
+        background-color:grey;
+        padding: 0px;
+        margin: 0px; 
+        overflow:hidden;
+        }
+
+    nav li{float:left;}
+
+    nav li a{
+        display:block;
+        color:red;
+        text-align:center;
+        padding: 20px; 
+        text-decoration:none;
+        }
+
+    nav li a:hover
+        {
+        background-color:violet;
+        color:crimson;
+        }
+
+    aside
+        {
+        width:20%;
+        float:left;
+        }
+
+    section
+        {
+        width:40%;
+        float:left;
+        }
+
+    article 
+        {
+        width:40%;
+        float:left;
+        }
+
+    footer
+        {
+        clear:both;
+        }
+
+        @media screen and(max-width:800px) 
+        {
+            aside
+            section
+            article
+            {
+                width:100%;
+            }
+        }
+</style>
+
+<body>
+        <header>
+        <h1>WELCOME TO MY PAGE</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </nav>
+
+<main>
+        <aside>
+            <h2>Aside</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Ducimus, aliquam! A tenetur facere perspiciatis atque voluptatibus, 
+             asperiores soluta, omnis voluptatem culpa, 
+             doloribus architecto sed reiciendis
+             eius enim accusantium beatae animi!</p>
+        </aside>
+
+        <section>
+            <h2>Section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dolorem ad praesentium ut consequatur in harum hic at ea quam enim, 
+            corrupti distinctio accusantium temporibus. 
+            Ea labore odit magni dolorum ratione?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Sit ipsa perspiciatis, 
+            ullam recusandae consequatur incidunt ab sapiente rerum a illo aperiam in,
+            labore eaque corporis beatae delectus, quo eos minima?</p>
+        </section>
+
+        <article>
+            <h2>Article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eveniet ratione expedita cumque tempore repudiandae quisquam minima distinctio ipsa, 
+            earum ipsam, 
+            modi recusandae provident dicta aspernatur nisi cupiditate, inventore fuga necessitatibus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quo adipisci beatae aperiam dolorum,
+            maiores fugit labore eos laboriosam similique repudiandae,
+            aspernatur repellat, 
+            consequuntur saepe ullam consectetur nemo. Recusandae, iure illo.</p>
+        </article>
+</main>
+
+
+        <footer>
+            <h1>This is my Footer line</h1>
+        </footer>
+    </body>
+</html>    
